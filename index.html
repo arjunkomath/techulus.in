@@ -2,45 +2,69 @@
 <html>
 <head>
     <title>Techulus | Design. Develop. Deploy</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <style type="text/css">
-    body {
-        font-family: 'Fira Sans', sans-serif;
-    }
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .typed-cursor{
+            opacity: 1;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
     </style>
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
 </head>
 <body>
 
-    <!-- Banner -->
-    <section id="banner">
-        <div class="inner split">
-            <section>
-                <h2 id="logo">Techulus</h2>
-            </section>
-            <section>
-                <p>Design. Develop. Deploy</p>
-                <ul class="actions">
-                    <li><a href="mailto:arjunkomath@gmail.com" class="button special">Contact</a></li>
-                </ul>
-            </section>
-        </div>
-    </section>
+<!-- Banner -->
+<section id="banner">
+    <div class="inner split">
+        <section>
+            <h2 id="logo">Techulus</h2>
+        </section>
+        <section>
+            <p class="slogan">Design. Develop. Deploy</p>
+            <ul class="actions">
+                <li><a href="mailto:arjunkomath@gmail.com" class="button special">Contact</a></li>
+            </ul>
+        </section>
+    </div>
+</section>
 
-    <!-- One -->
-    <section id="one" class="wrapper">
-        <div class="inner split">
-            <section>
-                <h2>About</h2>
-                <p>We develop innovative Web and Mobile Applications. Our ideology is to make lives easier, develop simple apps that actually solves problems and helps the common man!</p>
-                <!-- <ul class="actions">
-                <li><a href="#" class="button alt">Learn more</a></li>
-            </ul> -->
+<!-- One -->
+<section id="one" class="wrapper">
+    <div class="inner split">
+        <section>
+            <h2>About</h2>
+            <p>We develop innovative Web and Mobile Applications. Our ideology is to make lives easier, develop simple
+                apps that actually solves problems and helps the common man!</p>
+            <!-- <ul class="actions">
+            <li><a href="#" class="button alt">Learn more</a></li>
+        </ul> -->
         </section>
         <section>
             <h2>Products</h2>
@@ -52,12 +76,12 @@
             </ul>
         </section>
     </div>
-	
+
     <div class="inner">
-    	<h5>Contact</h5>
-    	<!--<h5>Arjun Komath<br/>-->
-    	arjun@techulus.in<br/>
-    	<!--Komath House, Muttom PO, Harippad, Alleppey, Kerala - 690511</h5>-->
+        <h5>Contact</h5>
+        <!--<h5>Arjun Komath<br/>-->
+        arjun@techulus.in<br/>
+        <!--Komath House, Muttom PO, Harippad, Alleppey, Kerala - 690511</h5>-->
     </div>
 </section>
 
@@ -65,7 +89,8 @@
 <!-- Footer -->
 <footer id="footer">
     <div class="copyright">
-        &copy; Techulus. All rights reserved. | <a href="/privacypolicy.htm">Privacy Policy</a> | Design: <a href="http://templated.co">TEMPLATED</a>.
+        &copy; Techulus. All rights reserved. | <a href="/privacypolicy.htm">Privacy Policy</a> | Design:
+        <a href="http://templated.co">TEMPLATED</a>.
     </div>
 </footer>
 
@@ -73,21 +98,21 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/skel.min.js"></script>
 <script src="assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
 <script>
-$.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
-    }
-});
-$('#logo').on('mouseover', function functionName() {
-    $('#logo').animateCss('tada');
-});
+    $.fn.extend({
+        animateCss: function (animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            this.addClass('animated ' + animationName).one(animationEnd, function () {
+                $(this).removeClass('animated ' + animationName);
+            });
+        }
+    });
+    $('#logo').on('mouseover', function functionName() {
+        $('#logo').animateCss('tada');
+    });
 </script>
-
 </body>
 </html>
