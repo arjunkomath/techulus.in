@@ -8,6 +8,8 @@
     <!--[if lte IE 8]>
     <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style type="text/css">
         * {
             font-family: 'Bitter', serif;
@@ -35,28 +37,28 @@
     </div>
 
     <div style="position: relative; margin: 15px 0; width: 100%; height: 800px; background-image: url(./assets/img/capture.jpg); background-size: cover;">
-        <div style="border-radius: 5px; position: absolute; top: 20px; padding: 20px; right: -10px; background-color: rgba(255, 255, 255, 0.7);">
+        <div class="js-tilt" style="border-radius: 5px; position: absolute; top: 20px; padding: 20px; right: -10px;">
             <h3><a href="https://capture.techulus.in/">Capture</a></h3>
             <p>Display screenshots anywhere <br/>with the best screenshot automation tool</p>
         </div>
     </div>
 
     <div style="position: relative; margin: 15px 0;  width: 100%; height: 800px; background-image: url(./assets/img/feline.jpg); background-size: cover;">
-        <div style="border-radius: 5px; position: absolute; bottom: 20px; padding: 20px; left: -10px; background-color: rgba(255, 255, 255, 0.7);">
+        <div class="js-tilt" style="border-radius: 5px; position: absolute; bottom: 20px; padding: 20px; left: -10px;">
             <h3><a href="http://feline.techulus.in/">Feline for Product Hunt</a></h3>
             <p>A beautiful, unofficial Android app <br/>for Product Hunt</p>
         </div>
     </div>
 
     <div style="position: relative; margin: 15px 0;  width: 100%; height: 800px; background-image: url(./assets/img/logbase.jpg); background-size: cover;">
-        <div style="border-radius: 5px; position: absolute; bottom: 20px; padding: 20px; left: -10px; background-color: rgba(255, 255, 255, 0.7);">
+        <div class="js-tilt" style="border-radius: 5px; position: absolute; bottom: 20px; padding: 20px; left: -10px;">
             <h3><a href="https://logbase.techulus.in/">LogBase</a></h3>
             <p>Realtime Javascript Cloud Logger</p>
         </div>
     </div>
 
     <div style="position: relative; margin: 15px 0; width: 100%; height: 800px; background-image: url(./assets/img/jaas.jpg); background-size: cover;">
-        <div style="border-radius: 5px; position: absolute; top: 20px; padding: 20px; right: -10px; background-color: rgba(255, 255, 255, 0.7);">
+        <div class="js-tilt" style="border-radius: 5px; position: absolute; top: 20px; padding: 20px; right: -10px;">
             <h3><a href="https://jaas.techulus.in/">JAAS - JSON as a Service</a></h3>
             <p>Simple data store <br/>for your mobile and web applications</p>
         </div>
@@ -75,15 +77,18 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <script src="assets/js/skel.min.js"></script>
 <script src="assets/js/util.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.1.21/tilt.jquery.min.js"></script>
 <!--[if lte IE 8]>
 <script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
 
 <script>
-    window.intercomSettings = {
-        app_id: "bixfzxdd"
-    };
+    $('.js-tilt').tilt({
+        scale: 1.2
+    })
+    $('.logo').tilt({
+        scale: 1.2
+    })
 </script>
-<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/bixfzxdd';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 </body>
 </html>
